@@ -1,0 +1,1614 @@
+[
+{
+  "model": "new_app.book",
+  "pk": 1,
+  "fields": {
+    "name": "accept",
+    "pages": 608,
+    "price": "71.00",
+    "rating": 8.0,
+    "publisher": 9,
+    "pubdate": "1947-12-05",
+    "authors": [
+      65
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 2,
+  "fields": {
+    "name": "open",
+    "pages": 409,
+    "price": "21.00",
+    "rating": 5.0,
+    "publisher": 8,
+    "pubdate": "1978-09-12",
+    "authors": [
+      27,
+      48,
+      61
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 3,
+  "fields": {
+    "name": "phone",
+    "pages": 722,
+    "price": "72.00",
+    "rating": 10.0,
+    "publisher": 7,
+    "pubdate": "2005-10-14",
+    "authors": [
+      7,
+      12,
+      89
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 4,
+  "fields": {
+    "name": "expect",
+    "pages": 884,
+    "price": "36.00",
+    "rating": 6.0,
+    "publisher": 9,
+    "pubdate": "1943-12-05",
+    "authors": [
+      69,
+      71
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 5,
+  "fields": {
+    "name": "after",
+    "pages": 346,
+    "price": "39.00",
+    "rating": 1.0,
+    "publisher": 3,
+    "pubdate": "2017-03-15",
+    "authors": [
+      88,
+      90
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 6,
+  "fields": {
+    "name": "mouth",
+    "pages": 165,
+    "price": "97.00",
+    "rating": 7.0,
+    "publisher": 1,
+    "pubdate": "1976-06-24",
+    "authors": [
+      21,
+      78,
+      82
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 7,
+  "fields": {
+    "name": "part",
+    "pages": 724,
+    "price": "20.00",
+    "rating": 3.0,
+    "publisher": 10,
+    "pubdate": "2008-03-22",
+    "authors": [
+      26,
+      92
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 8,
+  "fields": {
+    "name": "type",
+    "pages": 478,
+    "price": "4.00",
+    "rating": 9.0,
+    "publisher": 6,
+    "pubdate": "2015-05-04",
+    "authors": [
+      10,
+      20,
+      30
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 9,
+  "fields": {
+    "name": "admit",
+    "pages": 752,
+    "price": "53.00",
+    "rating": 6.0,
+    "publisher": 2,
+    "pubdate": "1974-03-27",
+    "authors": [
+      87
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 10,
+  "fields": {
+    "name": "bring",
+    "pages": 850,
+    "price": "90.00",
+    "rating": 2.0,
+    "publisher": 2,
+    "pubdate": "1981-03-27",
+    "authors": [
+      32
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 11,
+  "fields": {
+    "name": "off",
+    "pages": 776,
+    "price": "45.00",
+    "rating": 7.0,
+    "publisher": 7,
+    "pubdate": "1979-05-25",
+    "authors": [
+      73
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 12,
+  "fields": {
+    "name": "responsibility",
+    "pages": 269,
+    "price": "20.00",
+    "rating": 8.0,
+    "publisher": 8,
+    "pubdate": "1971-12-31",
+    "authors": [
+      95
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 13,
+  "fields": {
+    "name": "language",
+    "pages": 618,
+    "price": "32.00",
+    "rating": 3.0,
+    "publisher": 2,
+    "pubdate": "2003-11-09",
+    "authors": [
+      53,
+      63,
+      71
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 14,
+  "fields": {
+    "name": "benefit",
+    "pages": 68,
+    "price": "71.00",
+    "rating": 8.0,
+    "publisher": 4,
+    "pubdate": "2004-09-22",
+    "authors": [
+      49,
+      84
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 15,
+  "fields": {
+    "name": "four",
+    "pages": 864,
+    "price": "97.00",
+    "rating": 4.0,
+    "publisher": 9,
+    "pubdate": "1977-06-27",
+    "authors": [
+      13
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 16,
+  "fields": {
+    "name": "develop",
+    "pages": 616,
+    "price": "76.00",
+    "rating": 7.0,
+    "publisher": 4,
+    "pubdate": "1990-09-21",
+    "authors": [
+      10,
+      65
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 17,
+  "fields": {
+    "name": "participant",
+    "pages": 840,
+    "price": "23.00",
+    "rating": 10.0,
+    "publisher": 9,
+    "pubdate": "1996-07-22",
+    "authors": [
+      24,
+      48,
+      54
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 18,
+  "fields": {
+    "name": "why",
+    "pages": 39,
+    "price": "49.00",
+    "rating": 6.0,
+    "publisher": 7,
+    "pubdate": "2002-10-22",
+    "authors": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 19,
+  "fields": {
+    "name": "feel",
+    "pages": 281,
+    "price": "40.00",
+    "rating": 1.0,
+    "publisher": 1,
+    "pubdate": "1977-01-15",
+    "authors": [
+      72
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 20,
+  "fields": {
+    "name": "leave",
+    "pages": 467,
+    "price": "85.00",
+    "rating": 7.0,
+    "publisher": 6,
+    "pubdate": "1966-06-09",
+    "authors": [
+      39,
+      85
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 21,
+  "fields": {
+    "name": "perhaps",
+    "pages": 230,
+    "price": "95.00",
+    "rating": 6.0,
+    "publisher": 8,
+    "pubdate": "1943-08-02",
+    "authors": [
+      47,
+      76
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 22,
+  "fields": {
+    "name": "write",
+    "pages": 241,
+    "price": "41.00",
+    "rating": 3.0,
+    "publisher": 7,
+    "pubdate": "1986-10-09",
+    "authors": [
+      35,
+      70
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 23,
+  "fields": {
+    "name": "likely",
+    "pages": 950,
+    "price": "28.00",
+    "rating": 5.0,
+    "publisher": 1,
+    "pubdate": "1967-11-17",
+    "authors": [
+      44,
+      48,
+      78
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 24,
+  "fields": {
+    "name": "itself",
+    "pages": 330,
+    "price": "46.00",
+    "rating": 1.0,
+    "publisher": 5,
+    "pubdate": "2010-11-14",
+    "authors": [
+      9,
+      61
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 25,
+  "fields": {
+    "name": "discover",
+    "pages": 563,
+    "price": "13.00",
+    "rating": 10.0,
+    "publisher": 8,
+    "pubdate": "1967-07-06",
+    "authors": [
+      9,
+      60,
+      99
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 26,
+  "fields": {
+    "name": "idea",
+    "pages": 615,
+    "price": "78.00",
+    "rating": 4.0,
+    "publisher": 10,
+    "pubdate": "1979-09-23",
+    "authors": [
+      14,
+      19,
+      42
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 27,
+  "fields": {
+    "name": "thousand",
+    "pages": 647,
+    "price": "63.00",
+    "rating": 3.0,
+    "publisher": 9,
+    "pubdate": "1947-12-11",
+    "authors": [
+      15
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 28,
+  "fields": {
+    "name": "major",
+    "pages": 554,
+    "price": "96.00",
+    "rating": 6.0,
+    "publisher": 8,
+    "pubdate": "2005-06-10",
+    "authors": [
+      8,
+      60,
+      75
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 29,
+  "fields": {
+    "name": "contain",
+    "pages": 113,
+    "price": "28.00",
+    "rating": 6.0,
+    "publisher": 9,
+    "pubdate": "1996-12-19",
+    "authors": [
+      33
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 30,
+  "fields": {
+    "name": "challenge",
+    "pages": 201,
+    "price": "11.00",
+    "rating": 10.0,
+    "publisher": 5,
+    "pubdate": "1950-07-16",
+    "authors": [
+      12,
+      38,
+      94
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 31,
+  "fields": {
+    "name": "tax",
+    "pages": 901,
+    "price": "25.00",
+    "rating": 6.0,
+    "publisher": 5,
+    "pubdate": "2018-09-08",
+    "authors": [
+      64
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 32,
+  "fields": {
+    "name": "action",
+    "pages": 148,
+    "price": "68.00",
+    "rating": 5.0,
+    "publisher": 1,
+    "pubdate": "1971-10-04",
+    "authors": [
+      77
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 33,
+  "fields": {
+    "name": "dinner",
+    "pages": 404,
+    "price": "30.00",
+    "rating": 10.0,
+    "publisher": 2,
+    "pubdate": "2009-01-24",
+    "authors": [
+      22,
+      74,
+      77
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 34,
+  "fields": {
+    "name": "improve",
+    "pages": 638,
+    "price": "87.00",
+    "rating": 9.0,
+    "publisher": 9,
+    "pubdate": "2016-06-26",
+    "authors": [
+      56,
+      60,
+      90
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 35,
+  "fields": {
+    "name": "staff",
+    "pages": 417,
+    "price": "70.00",
+    "rating": 10.0,
+    "publisher": 8,
+    "pubdate": "2010-01-12",
+    "authors": [
+      63
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 36,
+  "fields": {
+    "name": "collection",
+    "pages": 703,
+    "price": "9.00",
+    "rating": 7.0,
+    "publisher": 7,
+    "pubdate": "2019-09-26",
+    "authors": [
+      27,
+      74,
+      94
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 37,
+  "fields": {
+    "name": "later",
+    "pages": 813,
+    "price": "4.00",
+    "rating": 10.0,
+    "publisher": 7,
+    "pubdate": "1999-03-09",
+    "authors": [
+      37,
+      74
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 38,
+  "fields": {
+    "name": "anything",
+    "pages": 106,
+    "price": "35.00",
+    "rating": 2.0,
+    "publisher": 6,
+    "pubdate": "1999-04-18",
+    "authors": [
+      19,
+      84,
+      89
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 39,
+  "fields": {
+    "name": "wife",
+    "pages": 378,
+    "price": "50.00",
+    "rating": 1.0,
+    "publisher": 10,
+    "pubdate": "1979-01-25",
+    "authors": [
+      3
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 40,
+  "fields": {
+    "name": "anything",
+    "pages": 44,
+    "price": "35.00",
+    "rating": 9.0,
+    "publisher": 6,
+    "pubdate": "1952-05-31",
+    "authors": [
+      33,
+      51,
+      76
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 41,
+  "fields": {
+    "name": "radio",
+    "pages": 985,
+    "price": "64.00",
+    "rating": 6.0,
+    "publisher": 2,
+    "pubdate": "1999-11-07",
+    "authors": [
+      44
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 42,
+  "fields": {
+    "name": "image",
+    "pages": 296,
+    "price": "31.00",
+    "rating": 4.0,
+    "publisher": 2,
+    "pubdate": "1953-04-21",
+    "authors": [
+      81
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 43,
+  "fields": {
+    "name": "concern",
+    "pages": 334,
+    "price": "14.00",
+    "rating": 10.0,
+    "publisher": 7,
+    "pubdate": "1987-08-19",
+    "authors": [
+      83
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 44,
+  "fields": {
+    "name": "bit",
+    "pages": 538,
+    "price": "56.00",
+    "rating": 3.0,
+    "publisher": 3,
+    "pubdate": "2004-04-26",
+    "authors": [
+      7,
+      43,
+      96
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 45,
+  "fields": {
+    "name": "rule",
+    "pages": 607,
+    "price": "63.00",
+    "rating": 8.0,
+    "publisher": 6,
+    "pubdate": "1994-05-05",
+    "authors": [
+      52,
+      61,
+      66
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 46,
+  "fields": {
+    "name": "entire",
+    "pages": 759,
+    "price": "43.00",
+    "rating": 7.0,
+    "publisher": 5,
+    "pubdate": "1956-12-21",
+    "authors": [
+      48,
+      64,
+      80
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 47,
+  "fields": {
+    "name": "need",
+    "pages": 899,
+    "price": "76.00",
+    "rating": 3.0,
+    "publisher": 10,
+    "pubdate": "1998-08-09",
+    "authors": [
+      56,
+      78
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 48,
+  "fields": {
+    "name": "ahead",
+    "pages": 115,
+    "price": "51.00",
+    "rating": 3.0,
+    "publisher": 10,
+    "pubdate": "1990-08-22",
+    "authors": [
+      75,
+      83,
+      95
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 49,
+  "fields": {
+    "name": "painting",
+    "pages": 157,
+    "price": "20.00",
+    "rating": 8.0,
+    "publisher": 6,
+    "pubdate": "1982-06-30",
+    "authors": [
+      21,
+      23,
+      69
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 50,
+  "fields": {
+    "name": "past",
+    "pages": 398,
+    "price": "33.00",
+    "rating": 8.0,
+    "publisher": 9,
+    "pubdate": "1974-10-16",
+    "authors": [
+      5,
+      6,
+      73
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 51,
+  "fields": {
+    "name": "nothing",
+    "pages": 440,
+    "price": "80.00",
+    "rating": 6.0,
+    "publisher": 1,
+    "pubdate": "1947-09-07",
+    "authors": [
+      1,
+      37,
+      42
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 52,
+  "fields": {
+    "name": "activity",
+    "pages": 816,
+    "price": "39.00",
+    "rating": 3.0,
+    "publisher": 10,
+    "pubdate": "1975-06-12",
+    "authors": [
+      63,
+      81
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 53,
+  "fields": {
+    "name": "as",
+    "pages": 209,
+    "price": "11.00",
+    "rating": 4.0,
+    "publisher": 3,
+    "pubdate": "2007-04-01",
+    "authors": [
+      18,
+      31,
+      51
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 54,
+  "fields": {
+    "name": "view",
+    "pages": 858,
+    "price": "79.00",
+    "rating": 9.0,
+    "publisher": 6,
+    "pubdate": "2004-03-11",
+    "authors": [
+      6,
+      51,
+      72
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 55,
+  "fields": {
+    "name": "while",
+    "pages": 310,
+    "price": "51.00",
+    "rating": 4.0,
+    "publisher": 9,
+    "pubdate": "1976-08-24",
+    "authors": [
+      58
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 56,
+  "fields": {
+    "name": "step",
+    "pages": 737,
+    "price": "75.00",
+    "rating": 8.0,
+    "publisher": 10,
+    "pubdate": "1954-02-06",
+    "authors": [
+      30,
+      67
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 57,
+  "fields": {
+    "name": "start",
+    "pages": 466,
+    "price": "17.00",
+    "rating": 4.0,
+    "publisher": 7,
+    "pubdate": "2021-01-06",
+    "authors": [
+      46,
+      54,
+      55
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 58,
+  "fields": {
+    "name": "pressure",
+    "pages": 559,
+    "price": "28.00",
+    "rating": 9.0,
+    "publisher": 6,
+    "pubdate": "1969-11-18",
+    "authors": [
+      33,
+      34
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 59,
+  "fields": {
+    "name": "yet",
+    "pages": 181,
+    "price": "31.00",
+    "rating": 8.0,
+    "publisher": 2,
+    "pubdate": "1966-01-27",
+    "authors": [
+      53,
+      70,
+      72
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 60,
+  "fields": {
+    "name": "alone",
+    "pages": 825,
+    "price": "82.00",
+    "rating": 5.0,
+    "publisher": 5,
+    "pubdate": "1971-02-11",
+    "authors": [
+      26,
+      91,
+      98
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 61,
+  "fields": {
+    "name": "use",
+    "pages": 759,
+    "price": "66.00",
+    "rating": 8.0,
+    "publisher": 7,
+    "pubdate": "1990-03-15",
+    "authors": [
+      57
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 62,
+  "fields": {
+    "name": "light",
+    "pages": 540,
+    "price": "53.00",
+    "rating": 10.0,
+    "publisher": 2,
+    "pubdate": "2008-03-26",
+    "authors": [
+      4,
+      28,
+      47
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 63,
+  "fields": {
+    "name": "heavy",
+    "pages": 908,
+    "price": "82.00",
+    "rating": 8.0,
+    "publisher": 7,
+    "pubdate": "2008-10-19",
+    "authors": [
+      31
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 64,
+  "fields": {
+    "name": "clear",
+    "pages": 121,
+    "price": "5.00",
+    "rating": 7.0,
+    "publisher": 6,
+    "pubdate": "2017-10-31",
+    "authors": [
+      44
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 65,
+  "fields": {
+    "name": "identify",
+    "pages": 773,
+    "price": "59.00",
+    "rating": 10.0,
+    "publisher": 3,
+    "pubdate": "1946-02-16",
+    "authors": [
+      30,
+      51,
+      77
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 66,
+  "fields": {
+    "name": "test",
+    "pages": 507,
+    "price": "30.00",
+    "rating": 9.0,
+    "publisher": 1,
+    "pubdate": "1985-07-04",
+    "authors": [
+      85
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 67,
+  "fields": {
+    "name": "city",
+    "pages": 328,
+    "price": "74.00",
+    "rating": 5.0,
+    "publisher": 8,
+    "pubdate": "1990-11-01",
+    "authors": [
+      22
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 68,
+  "fields": {
+    "name": "rate",
+    "pages": 225,
+    "price": "6.00",
+    "rating": 5.0,
+    "publisher": 10,
+    "pubdate": "1961-02-11",
+    "authors": [
+      35,
+      91,
+      92
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 69,
+  "fields": {
+    "name": "until",
+    "pages": 931,
+    "price": "46.00",
+    "rating": 8.0,
+    "publisher": 5,
+    "pubdate": "2017-07-27",
+    "authors": [
+      6
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 70,
+  "fields": {
+    "name": "beyond",
+    "pages": 895,
+    "price": "38.00",
+    "rating": 3.0,
+    "publisher": 2,
+    "pubdate": "1950-03-12",
+    "authors": [
+      97
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 71,
+  "fields": {
+    "name": "ground",
+    "pages": 7,
+    "price": "1.00",
+    "rating": 2.0,
+    "publisher": 10,
+    "pubdate": "1977-04-16",
+    "authors": [
+      2,
+      88
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 72,
+  "fields": {
+    "name": "say",
+    "pages": 61,
+    "price": "15.00",
+    "rating": 4.0,
+    "publisher": 10,
+    "pubdate": "1988-11-01",
+    "authors": [
+      91
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 73,
+  "fields": {
+    "name": "new",
+    "pages": 389,
+    "price": "52.00",
+    "rating": 9.0,
+    "publisher": 6,
+    "pubdate": "1983-07-26",
+    "authors": [
+      65,
+      85
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 74,
+  "fields": {
+    "name": "accept",
+    "pages": 588,
+    "price": "17.00",
+    "rating": 8.0,
+    "publisher": 1,
+    "pubdate": "2008-10-12",
+    "authors": [
+      16,
+      55
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 75,
+  "fields": {
+    "name": "contain",
+    "pages": 894,
+    "price": "85.00",
+    "rating": 9.0,
+    "publisher": 5,
+    "pubdate": "1986-01-13",
+    "authors": [
+      2,
+      16,
+      25
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 76,
+  "fields": {
+    "name": "particularly",
+    "pages": 894,
+    "price": "14.00",
+    "rating": 10.0,
+    "publisher": 2,
+    "pubdate": "1980-04-06",
+    "authors": [
+      64,
+      68,
+      72
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 77,
+  "fields": {
+    "name": "tough",
+    "pages": 565,
+    "price": "93.00",
+    "rating": 9.0,
+    "publisher": 7,
+    "pubdate": "1985-12-01",
+    "authors": [
+      23,
+      63,
+      87
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 78,
+  "fields": {
+    "name": "must",
+    "pages": 440,
+    "price": "60.00",
+    "rating": 9.0,
+    "publisher": 10,
+    "pubdate": "1943-04-20",
+    "authors": [
+      3,
+      49
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 79,
+  "fields": {
+    "name": "their",
+    "pages": 547,
+    "price": "94.00",
+    "rating": 7.0,
+    "publisher": 9,
+    "pubdate": "1972-03-23",
+    "authors": [
+      10,
+      80
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 80,
+  "fields": {
+    "name": "improve",
+    "pages": 392,
+    "price": "27.00",
+    "rating": 6.0,
+    "publisher": 1,
+    "pubdate": "2014-10-17",
+    "authors": [
+      34,
+      98
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 81,
+  "fields": {
+    "name": "boy",
+    "pages": 535,
+    "price": "40.00",
+    "rating": 6.0,
+    "publisher": 7,
+    "pubdate": "1949-02-10",
+    "authors": [
+      20,
+      22,
+      29
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 82,
+  "fields": {
+    "name": "again",
+    "pages": 14,
+    "price": "77.00",
+    "rating": 7.0,
+    "publisher": 4,
+    "pubdate": "2003-07-28",
+    "authors": [
+      66
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 83,
+  "fields": {
+    "name": "still",
+    "pages": 964,
+    "price": "85.00",
+    "rating": 4.0,
+    "publisher": 7,
+    "pubdate": "1960-06-17",
+    "authors": [
+      88,
+      92
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 84,
+  "fields": {
+    "name": "source",
+    "pages": 231,
+    "price": "57.00",
+    "rating": 5.0,
+    "publisher": 10,
+    "pubdate": "1970-05-27",
+    "authors": [
+      21,
+      85
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 85,
+  "fields": {
+    "name": "occur",
+    "pages": 399,
+    "price": "69.00",
+    "rating": 3.0,
+    "publisher": 10,
+    "pubdate": "1972-04-05",
+    "authors": [
+      20,
+      47
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 86,
+  "fields": {
+    "name": "face",
+    "pages": 766,
+    "price": "2.00",
+    "rating": 7.0,
+    "publisher": 9,
+    "pubdate": "1986-07-22",
+    "authors": [
+      67
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 87,
+  "fields": {
+    "name": "against",
+    "pages": 957,
+    "price": "95.00",
+    "rating": 4.0,
+    "publisher": 5,
+    "pubdate": "1995-06-14",
+    "authors": [
+      55,
+      73
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 88,
+  "fields": {
+    "name": "light",
+    "pages": 406,
+    "price": "51.00",
+    "rating": 7.0,
+    "publisher": 10,
+    "pubdate": "1978-06-14",
+    "authors": [
+      67,
+      93
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 89,
+  "fields": {
+    "name": "artist",
+    "pages": 356,
+    "price": "90.00",
+    "rating": 4.0,
+    "publisher": 7,
+    "pubdate": "2005-12-15",
+    "authors": [
+      2,
+      59,
+      86
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 90,
+  "fields": {
+    "name": "during",
+    "pages": 131,
+    "price": "75.00",
+    "rating": 8.0,
+    "publisher": 1,
+    "pubdate": "1957-03-15",
+    "authors": [
+      5,
+      14
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 91,
+  "fields": {
+    "name": "finish",
+    "pages": 546,
+    "price": "41.00",
+    "rating": 2.0,
+    "publisher": 2,
+    "pubdate": "1989-12-31",
+    "authors": [
+      5
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 92,
+  "fields": {
+    "name": "such",
+    "pages": 965,
+    "price": "37.00",
+    "rating": 7.0,
+    "publisher": 5,
+    "pubdate": "1964-01-23",
+    "authors": [
+      44,
+      81,
+      99
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 93,
+  "fields": {
+    "name": "mind",
+    "pages": 172,
+    "price": "23.00",
+    "rating": 1.0,
+    "publisher": 10,
+    "pubdate": "2016-10-09",
+    "authors": [
+      52,
+      62,
+      87
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 94,
+  "fields": {
+    "name": "same",
+    "pages": 489,
+    "price": "21.00",
+    "rating": 1.0,
+    "publisher": 4,
+    "pubdate": "1973-03-10",
+    "authors": [
+      80
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 95,
+  "fields": {
+    "name": "experience",
+    "pages": 886,
+    "price": "92.00",
+    "rating": 6.0,
+    "publisher": 9,
+    "pubdate": "1979-02-12",
+    "authors": [
+      20,
+      35,
+      72
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 96,
+  "fields": {
+    "name": "skill",
+    "pages": 653,
+    "price": "18.00",
+    "rating": 5.0,
+    "publisher": 6,
+    "pubdate": "2021-09-12",
+    "authors": [
+      11,
+      63,
+      90
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 97,
+  "fields": {
+    "name": "interesting",
+    "pages": 986,
+    "price": "96.00",
+    "rating": 9.0,
+    "publisher": 8,
+    "pubdate": "2010-01-14",
+    "authors": [
+      11,
+      14,
+      26
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 98,
+  "fields": {
+    "name": "open",
+    "pages": 774,
+    "price": "13.00",
+    "rating": 10.0,
+    "publisher": 6,
+    "pubdate": "1964-05-14",
+    "authors": [
+      8
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 99,
+  "fields": {
+    "name": "item",
+    "pages": 99,
+    "price": "48.00",
+    "rating": 8.0,
+    "publisher": 8,
+    "pubdate": "2007-11-11",
+    "authors": [
+      32,
+      66
+    ]
+  }
+},
+{
+  "model": "new_app.book",
+  "pk": 100,
+  "fields": {
+    "name": "month",
+    "pages": 717,
+    "price": "18.00",
+    "rating": 7.0,
+    "publisher": 1,
+    "pubdate": "2003-09-20",
+    "authors": [
+      3,
+      18,
+      80
+    ]
+  }
+}
+]

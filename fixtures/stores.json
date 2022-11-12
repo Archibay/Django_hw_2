@@ -1,0 +1,109 @@
+[
+{
+  "model": "new_app.store",
+  "pk": 1,
+  "fields": {
+    "name": "Jones, Robertson and Watson",
+    "books": [
+      91
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 2,
+  "fields": {
+    "name": "Dixon-Foster",
+    "books": [
+      12
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 3,
+  "fields": {
+    "name": "Daugherty-Trujillo",
+    "books": [
+      55
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 4,
+  "fields": {
+    "name": "Davis-Coleman",
+    "books": [
+      44,
+      81
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 5,
+  "fields": {
+    "name": "Zavala Group",
+    "books": [
+      5,
+      24,
+      91
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 6,
+  "fields": {
+    "name": "Moran, Chavez and Graham",
+    "books": [
+      68
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 7,
+  "fields": {
+    "name": "Munoz-Chavez",
+    "books": [
+      83,
+      87,
+      92
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 8,
+  "fields": {
+    "name": "Smith-Kim",
+    "books": [
+      23,
+      28,
+      52
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 9,
+  "fields": {
+    "name": "Henson-Lester",
+    "books": [
+      85
+    ]
+  }
+},
+{
+  "model": "new_app.store",
+  "pk": 10,
+  "fields": {
+    "name": "Lane, Payne and Wheeler",
+    "books": [
+      28
+    ]
+  }
+}
+]

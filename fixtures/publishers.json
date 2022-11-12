@@ -1,0 +1,72 @@
+[
+{
+  "model": "new_app.publisher",
+  "pk": 1,
+  "fields": {
+    "name": "Mcgrath PLC"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 2,
+  "fields": {
+    "name": "Mata, Zavala and Wade"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 3,
+  "fields": {
+    "name": "Travis, Young and Ortiz"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 4,
+  "fields": {
+    "name": "Delacruz-Riley"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 5,
+  "fields": {
+    "name": "Griffin, Cameron and Pierce"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 6,
+  "fields": {
+    "name": "Brown, Woods and Murphy"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 7,
+  "fields": {
+    "name": "Taylor Inc"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 8,
+  "fields": {
+    "name": "Meza-Zimmerman"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 9,
+  "fields": {
+    "name": "Ramirez, Chan and Moreno"
+  }
+},
+{
+  "model": "new_app.publisher",
+  "pk": 10,
+  "fields": {
+    "name": "Johnston-Fisher"
+  }
+}
+]
