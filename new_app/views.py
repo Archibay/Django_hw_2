@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
+from .models import Author, Publisher, Book, Store
 
 
 def detail_view(request):
@@ -7,7 +8,8 @@ def detail_view(request):
 
 
 def author_view(request):
-    return render(request, 'detail.html', {})
+    author_list = Author.objects.all()
+    return render(request, 'author_list.html', {'author_list': author_list})
 
 
 def publisher_view(request):
