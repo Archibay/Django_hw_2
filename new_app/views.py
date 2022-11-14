@@ -8,7 +8,7 @@ def detail_view(request):
 
 
 def author_view(request):
-    author_list = Author.objects.all()
+    author_list = Author.objects.prefetch_related('book_set').all()
     return render(request, 'author_list.html', {'author_list': author_list})
 
 
