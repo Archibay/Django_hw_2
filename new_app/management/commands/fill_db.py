@@ -37,26 +37,28 @@ class Command(BaseCommand):
 
         # add Books
         total_b = kwargs['total_b']
-        try:
-            max_p = Publisher.objects.latest('id').id
-        except ValueError:
-            max_p = 1
+        # try:
+        #
+        # except ValueError:
+        #     random_p = 1
         for i in range(total_b):
-            random_publisher = random.randrange(1, max_p + 1)
+            random_p = random.choice(Publisher.objects.values_list('id', flat=True))
+            # random_publisher = random.randrange(1, random_p)
             objs = Book(name=fake.word(),
                         pages=random.randrange(1, 1000),
                         price=random.randrange(1, 100),
                         rating=random.randrange(1, 11),
-                        publisher=Publisher.objects.get(id=random_publisher),
+                        publisher=Publisher.objects.get(id=random_p),
                         pubdate=fake.date_between(start_date='-80y', end_date='today'))
             objs.save()
-            try:
-                max_a = Author.objects.latest('id').id
-            except ValueError:
-                max_a = 1
+            # try:
+            #     max_a = Author.objects.latest('id').id
+            # except ValueError:
+            #     max_a = 1
             for a in range(random.randrange(1, 4)):
-                r_authors = Author.objects.get(id=random.randrange(1, Author.objects.latest('id').id)).id
-                objs.authors.add(r_authors)
+                random_a = random.choice(Author.objects.values_list('id', flat=True))
+                # r_authors = Author.objects.get(id=random.randrange(1, Author.objects.latest('id').id)).id
+                objs.authors.add(random_a)
 
         # add Stores
         total_s = kwargs['total_s']
@@ -64,5 +66,6 @@ class Command(BaseCommand):
             objs = Store(name=fake.company())
             objs.save()
             for a in range(random.randrange(1, 4)):
-                r_books = Book.objects.get(id=random.randrange(1, Book.objects.latest('id').id)).id
-                objs.books.add(r_books)
+                random_b = random.choice(Book.objects.values_list('id', flat=True))
+                # r_books = Book.objects.get(id=random.randrange(1, Book.objects.latest('id').id)).id
+                objs.books.add(random_b)

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Author detail</title>
+</head>
+<body>
+<strong>Author name: {{ a.name }}</strong>
+<br/>
+<br/>
+<strong>Names of books:</strong>
+{% for b in a.book_set.all %}
+<ul>
+    <li>{{ b.name }}</li>
+</ul>
+{% endfor %}
+</body>
+</html>
