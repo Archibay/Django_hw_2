@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Book detail</title>
 </head>
 <body>
-
+<strong>Book: {{ b_detail.name }}</strong>
+<br/>
+<br/>
+<strong>Author:</strong>
+{% for a in b_detail.authors.all %}
+<ul>
+    <li>{{ a.name }}</li>
+</ul>
+{% endfor %}
+<strong>Publisher:</strong>
+<ul>
+    <li>{{ b_detail.publisher.name }}</li>
+</ul>
+<strong>Store:</strong>
+{% for s in b_detail.store_set.all %}
+<ul>
+    <li>{{ s.name }}</li>
+</ul>
+{% endfor %}
+<strong>Price per page:</strong>
+<ul>
+    <li>{{ price_per_page.price_per_page }}</li>
+</ul>
+<a href = "{% url 'new_app:book' %}">Back to list</a>
 </body>
 </html>

@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Store detail</title>
 </head>
 <body>
-
+<strong>Store: {{ a.name }}</strong>
+<br/>
+<br/>
+<strong>Names of books:</strong>
+{% for b in a.books.all %}
+<ul>
+    <li>{{ b.name }}</li>
+</ul>
+{% endfor %}
+<a href = "{% url 'new_app:store' %}">Back to list</a>
 </body>
 </html>

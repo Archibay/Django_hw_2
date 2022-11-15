@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Publisher detail</title>
 </head>
 <body>
-
+<strong>Publisher: {{ p.name }}</strong>
+<br/>
+<br/>
+<strong>Names of books:</strong>
+{% for b in p.book_set.all %}
+<ul>
+    <li>{{ b.name }}</li>
+</ul>
+{% endfor %}
+<a href = "{% url 'new_app:publisher' %}">Back to list</a>
 </body>
 </html>

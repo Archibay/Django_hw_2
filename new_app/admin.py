@@ -30,12 +30,6 @@ class BookAdmin(admin.ModelAdmin):
         ('Book info', {
             'fields': ('name', 'pages', 'price', 'rating')
         }),
-        # ('Authors info', {
-        #     'fields': ('author.name',),
-        # }),
-        # ('Publisher info', {
-        #     'fields': ('publisher.name',)
-        # }),
     )
     date_hierarchy = 'pubdate'
     save_as = True
@@ -49,9 +43,6 @@ class StoreAdmin(admin.ModelAdmin):
         ('Store info', {
             'fields': ('name',)
         }),
-        # ('Books info', {
-        #     'fields': ('book.name', 'book.price', 'book.rating'),
-        # }),
     )
     save_as = True
 

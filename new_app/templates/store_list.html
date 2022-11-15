@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Store list</title>
 </head>
 <body>
-
+    <table>
+  <thead>
+      <th bgcolor = "#A6AFD0">Store</th>
+      <th bgcolor = "#A6AFD0">Numbers of books</th>
+      <th bgcolor = "#A6AFD0">Total price of all books</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        {% for s in book_count %}
+        <td><a href = "{% url 'new_app:store_detail' pk=s.id %}">{{ s.name }}</a></td>
+        <td>{{ s.num_books }}</td>
+        <td>{{ s.tp_books }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 </body>
 </html>

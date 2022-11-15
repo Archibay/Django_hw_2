@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Book list</title>
 </head>
 <body>
-
+    <table>
+  <thead>
+      <th bgcolor = "#A6AFD0">Book name</th>
+      <th bgcolor = "#A6AFD0">Book rating</th>
+      <th bgcolor = "#A6AFD0">Book pubdate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        {% for b in b_list %}
+        <td><a href = "{% url 'new_app:book_detail' pk=b.id %}">{{ b.name }}</a></td>
+        <td>{{ b.rating|floatformat:0 }}</td>
+        <td>{{ b.pubdate|date:"d.m.Y" }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 </body>
 </html>

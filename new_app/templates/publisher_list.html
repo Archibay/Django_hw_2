@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Publisher list</title>
 </head>
 <body>
-
+<style>
+table {
+  border:1px solid black;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Some list</title>
+</head>
+<body>
+    <table>
+  <thead>
+      <th bgcolor = "#A6AFD0">Publisher</th>
+      <th bgcolor = "#A6AFD0">Average book price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        {% for pub in book_avg_price %}
+        <td><a href = "{% url 'new_app:publisher_detail' pk=pub.id %}">{{ pub.name }}</a></td>
+        <td>{{ pub.num_books|floatformat:1 }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 </body>
 </html>
