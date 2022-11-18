@@ -13,5 +13,8 @@ List what was done:
 * new models for testing was created (Author, Publisher, Book and Store)
 * all fixtures in project
 * new ModelAdmin for all models
+* added celery and new view to sent reminders to e-mail (to console)<br>
+  to test it run $ celery -A hw_project_2 worker --loglevel=INFO
+
 
 You can start from /detail/

@@ -19,31 +19,22 @@ class Command(BaseCommand):
     def handle(self, **kwargs):
         # add Authors
         total_a = kwargs['total_a']
-        for t in range(total_a):
-            objs = Author(name=fake.name(), age=random.randrange(20, 101))
-            objs.save()
-        # Author.objects.bulk_create([
-        #     Author(name=fake.name(), age=random.randrange(20, 101)),
-        #     ], batch_size=total_a)
+        Author.objects.bulk_create(
+            [Author(name=fake.name(), age=random.randrange(20, 101)) for i in range(total_a)]
+        )
 
         # add Publishers
         total_p = kwargs['total_p']
-        for t in range(total_p):
-            objs = Publisher(name=fake.company())
-            objs.save()
-        # Publisher.objects.bulk_create([
-        #     Publisher(name=fake.company()),
-        # ], batch_size=total_p)
+        Publisher.objects.bulk_create(
+            [Publisher(name=fake.company()) for i in range(total_p)]
+        )
 
         # add Books
         total_b = kwargs['total_b']
-        # try:
-        #
-        # except ValueError:
-        #     random_p = 1
+        p_list = Publisher.objects.values_list('id', flat=True)
+        a_list = Author.objects.values_list('id', flat=True)
         for i in range(total_b):
-            random_p = random.choice(Publisher.objects.values_list('id', flat=True))
-            # random_publisher = random.randrange(1, random_p)
+            random_p = random.choice(p_list)
             objs = Book(name=fake.word(),
                         pages=random.randrange(1, 1000),
                         price=random.randrange(1, 100),
@@ -51,21 +42,16 @@ class Command(BaseCommand):
                         publisher=Publisher.objects.get(id=random_p),
                         pubdate=fake.date_between(start_date='-80y', end_date='today'))
             objs.save()
-            # try:
-            #     max_a = Author.objects.latest('id').id
-            # except ValueError:
-            #     max_a = 1
             for a in range(random.randrange(1, 4)):
-                random_a = random.choice(Author.objects.values_list('id', flat=True))
-                # r_authors = Author.objects.get(id=random.randrange(1, Author.objects.latest('id').id)).id
+                random_a = random.choice(a_list)
                 objs.authors.add(random_a)
 
         # add Stores
         total_s = kwargs['total_s']
+        b_list = Book.objects.values_list('id', flat=True)
         for b in range(total_s):
             objs = Store(name=fake.company())
             objs.save()
             for a in range(random.randrange(1, 4)):
-                random_b = random.choice(Book.objects.values_list('id', flat=True))
-                # r_books = Book.objects.get(id=random.randrange(1, Book.objects.latest('id').id)).id
+                random_b = random.choice(b_list)
                 objs.books.add(random_b)

@@ -1,6 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib import messages
 from .models import Author, Publisher, Book, Store
 from django.db.models import Count, Avg, Max, Min, FloatField, Sum
+from .forms import ReminderForm
+from .tasks import send_email
 
 
 def detail_view(request):
@@ -50,3 +53,18 @@ def store_view(request):
 def store_detail_view(request, pk):
     a = get_object_or_404(Store.objects.prefetch_related('books'), pk=pk)
     return render(request, 'store_detail.html', {'a': a})
+
+
+def reminder_view(request):
+    if request.method == 'POST':
+        form = ReminderForm(request.POST)
+        if form.is_valid():
+            mail = form.cleaned_data['mail']
+            text = form.cleaned_data['text']
+            date_time = form.cleaned_data['date_time']
+            send_email.apply_async((mail, text), eta=date_time)
+            return redirect('new_app:reminder')
+
+    else:
+        form = ReminderForm()
+    return render(request, 'reminder.html', {'form': form})
