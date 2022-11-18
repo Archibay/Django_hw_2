@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reminder</title>
+</head>
+<body>
+<form action="{% url 'new_app:reminder' %}" method="post" >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><input type="submit" value="Ok"></p>
+</form>
+</body>
+</html>
