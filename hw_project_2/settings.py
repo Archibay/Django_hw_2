@@ -153,6 +153,6 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_BEAT_SCHEDULE = {
     'check-for-new-posts': {
         'task': 'celery_beat.tasks.check_post',
-        'schedule': crontab()
+        'schedule': crontab(minute=0, hour='1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23'),
     },
 }
