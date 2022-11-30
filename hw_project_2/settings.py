@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from pathlib import Path
+from celery.schedules import crontab
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -48,6 +50,7 @@ INSTALLED_APPS = [
     'django_extensions',
     "debug_toolbar",
     'new_app',
+    'celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +150,9 @@ CELERY_BROKER_URL = 'amqp://localhost'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
+CELERY_BEAT_SCHEDULE = {
+    'check-for-new-posts': {
+        'task': 'celery_beat.tasks.check_post',
+        'schedule': crontab(minute=0, hour='1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23'),
+    },
+}

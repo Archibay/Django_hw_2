@@ -15,3 +15,12 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 
 # Load task modules from all registered Django apps.
 app.autodiscover_tasks()
+
+# app.conf.beat_schedule = {
+#     'check-for-new-posts': {
+#         'task': 'check_post',
+#         'schedule': 10.0,
+#         'args': ()
+#     },
+# }
+# app.conf.timezone = 'Europe/Kiev'
