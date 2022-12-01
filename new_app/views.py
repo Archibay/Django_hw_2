@@ -4,6 +4,10 @@ from .models import Author, Publisher, Book, Store
 from django.db.models import Count, Avg, Max, Min, FloatField, Sum
 from .forms import ReminderForm
 from .tasks import send_email
+from django.views.generic import CreateView, UpdateView, DeleteView, ListView, DetailView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
+
 
 
 def detail_view(request):
@@ -68,3 +72,27 @@ def reminder_view(request):
     else:
         form = ReminderForm()
     return render(request, 'reminder.html', {'form': form})
+
+
+class PublisherDetailView(DetailView):
+    model = Publisher
+
+
+class PublisherListView(ListView):
+    model = Publisher
+    paginate_by = 10
+
+
+class PublisherCreateView(CreateView):
+    model = Publisher
+    fields = ['name']
+
+
+class PublisherUpdateView(UpdateView):
+    model = Publisher
+    fields = ['name']
+
+
+class PublisherDeleteView(DeleteView):
+    model = Publisher
+    success_url = reverse_lazy('publishers_list')
