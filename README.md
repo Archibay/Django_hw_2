@@ -15,6 +15,8 @@ List what was done:
 * new ModelAdmin for all models
 * added celery and new view to sent reminders to e-mail (to console)<br>
   to test it run $ celery -A hw_project_2 worker --loglevel=INFO
-
+* added periodic task using celery beat, that check updates in site and add new quotes in db<br>
+  to run this task use -A hw_project_2 worker -B --loglevel=INFO
+* new class based views for Author model (start in /authors/)
 
 You can start from /detail/
