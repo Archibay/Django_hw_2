@@ -16,9 +16,9 @@ urlpatterns = [
     path('store/<int:pk>/', views.store_detail_view, name='store_detail'),
     path('reminder/', views.reminder_view, name='reminder'),
 
-    path('publisher-cbv/<int:pk>/', views.PublisherDetailView.as_view(), name='publisher_cbv'),
-    path('publishers/', views.PublisherListView.as_view(), name='publishers'),
-    path('publisher-create/', views.CreateView.as_view(), name='publisher_create'),
-    path('publisher-update/<int:pk>/', views.PublisherUpdateView.as_view(), name='publisher_update'),
-    path('publisher-delete/<int:pk>/', views.PublisherDeleteView.as_view(), name='publisher_delete'),
+    path('author-cbv/<int:pk>/', views.AuthorDetailView.as_view(), name='author_cbv'),
+    path('authors/', views.AuthorListView.as_view(), name='authors'),
+    path('author-create/', views.AuthorCreateView.as_view(), name='author_create'),
+    path('author-update/<int:pk>/', views.AuthorUpdateView.as_view(), name='author_update'),
+    path('author-delete/<int:pk>/', views.AuthorDeleteView.as_view(), name='author_delete'),
 ]

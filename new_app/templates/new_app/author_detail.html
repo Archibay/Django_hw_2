@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Author detail</title>
+</head>
+<body>
+
+{% block content %}
+  <h1>Author detail</h1>
+  <p>Author name: {{ object.name }}</p>
+  <p>Author age: {{ object.age }}</p>
+  <p><a href='{% url "new_app:author_update" pk=object.id %}'>Update</a> /
+      <a href='{% url "new_app:author_delete" pk=object.id %}'>Delete</a></p>
+
+
+{% endblock %}
+</body>
+</html>

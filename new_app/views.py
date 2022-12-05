@@ -7,7 +7,7 @@ from .tasks import send_email
 from django.views.generic import CreateView, UpdateView, DeleteView, ListView, DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
-
+from django.views import generic
 
 
 def detail_view(request):
@@ -28,12 +28,12 @@ def author_detail_view(request, pk):
 def publisher_view(request):
     p_list = Publisher.objects.prefetch_related('book_set').all()
     book_avg_price = p_list.annotate(num_books=Avg('book__price'))
-    return render(request, 'publisher_list.html', {'book_avg_price': book_avg_price})
+    return render(request, 'author_list.html', {'book_avg_price': book_avg_price})
 
 
 def publisher_detail_view(request, pk):
     p = get_object_or_404(Publisher.objects.prefetch_related('book_set'), pk=pk)
-    return render(request, 'publisher_detail.html', {'p': p})
+    return render(request, 'author_detail.html', {'p': p})
 
 
 def book_view(request):
@@ -74,25 +74,34 @@ def reminder_view(request):
     return render(request, 'reminder.html', {'form': form})
 
 
-class PublisherDetailView(DetailView):
-    model = Publisher
+class AuthorDetailView(DetailView):
+    model = Author
 
 
-class PublisherListView(ListView):
-    model = Publisher
-    paginate_by = 10
+class AuthorListView(ListView):
+    model = Author
+    queryset = Author.objects.all()
+    paginate_by = 30
 
 
-class PublisherCreateView(CreateView):
-    model = Publisher
-    fields = ['name']
+class AuthorCreateView(LoginRequiredMixin, CreateView):
+    model = Author
+    fields = ['name', 'age']
+    template_name = 'new_app/author_create.html'
+    success_url = reverse_lazy('new_app:authors')
+    login_url = '/admin/login/?next=/admin/'
 
 
-class PublisherUpdateView(UpdateView):
-    model = Publisher
-    fields = ['name']
+class AuthorUpdateView(LoginRequiredMixin, UpdateView):
+    model = Author
+    fields = ['name', 'age']
+    template_name = 'new_app/author_update.html'
+    success_url = reverse_lazy('new_app:authors')
+    login_url = '/admin/login/?next=/admin/'
 
 
-class PublisherDeleteView(DeleteView):
-    model = Publisher
-    success_url = reverse_lazy('publishers_list')
+class AuthorDeleteView(LoginRequiredMixin, DeleteView):
+    model = Author
+    template_name = 'new_app/author_delete.html'
+    success_url = reverse_lazy('new_app:authors')
+    login_url = '/admin/login/?next=/admin/'
