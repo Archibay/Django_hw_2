@@ -15,4 +15,10 @@ urlpatterns = [
     path('store/', views.store_view, name='store'),
     path('store/<int:pk>/', views.store_detail_view, name='store_detail'),
     path('reminder/', views.reminder_view, name='reminder'),
+
+    path('author-cbv/<int:pk>/', views.AuthorDetailView.as_view(), name='author_cbv'),
+    path('authors/', views.AuthorListView.as_view(), name='authors'),
+    path('author-create/', views.AuthorCreateView.as_view(), name='author_create'),
+    path('author-update/<int:pk>/', views.AuthorUpdateView.as_view(), name='author_update'),
+    path('author-delete/<int:pk>/', views.AuthorDeleteView.as_view(), name='author_delete'),
 ]

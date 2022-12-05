@@ -4,6 +4,10 @@ from .models import Author, Publisher, Book, Store
 from django.db.models import Count, Avg, Max, Min, FloatField, Sum
 from .forms import ReminderForm
 from .tasks import send_email
+from django.views.generic import CreateView, UpdateView, DeleteView, ListView, DetailView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
+from django.views import generic
 
 
 def detail_view(request):
@@ -24,12 +28,12 @@ def author_detail_view(request, pk):
 def publisher_view(request):
     p_list = Publisher.objects.prefetch_related('book_set').all()
     book_avg_price = p_list.annotate(num_books=Avg('book__price'))
-    return render(request, 'publisher_list.html', {'book_avg_price': book_avg_price})
+    return render(request, 'author_list.html', {'book_avg_price': book_avg_price})
 
 
 def publisher_detail_view(request, pk):
     p = get_object_or_404(Publisher.objects.prefetch_related('book_set'), pk=pk)
-    return render(request, 'publisher_detail.html', {'p': p})
+    return render(request, 'author_detail.html', {'p': p})
 
 
 def book_view(request):
@@ -68,3 +72,36 @@ def reminder_view(request):
     else:
         form = ReminderForm()
     return render(request, 'reminder.html', {'form': form})
+
+
+class AuthorDetailView(DetailView):
+    model = Author
+
+
+class AuthorListView(ListView):
+    model = Author
+    queryset = Author.objects.all()
+    paginate_by = 30
+
+
+class AuthorCreateView(LoginRequiredMixin, CreateView):
+    model = Author
+    fields = ['name', 'age']
+    template_name = 'new_app/author_create.html'
+    success_url = reverse_lazy('new_app:authors')
+    login_url = '/admin/login/?next=/admin/'
+
+
+class AuthorUpdateView(LoginRequiredMixin, UpdateView):
+    model = Author
+    fields = ['name', 'age']
+    template_name = 'new_app/author_update.html'
+    success_url = reverse_lazy('new_app:authors')
+    login_url = '/admin/login/?next=/admin/'
+
+
+class AuthorDeleteView(LoginRequiredMixin, DeleteView):
+    model = Author
+    template_name = 'new_app/author_delete.html'
+    success_url = reverse_lazy('new_app:authors')
+    login_url = '/admin/login/?next=/admin/'
