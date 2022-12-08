@@ -8,12 +8,15 @@ from django.views.generic import CreateView, UpdateView, DeleteView, ListView, D
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views import generic
+from django.views.decorators.cache import cache_page
+from django.utils.decorators import method_decorator
 
 
 def detail_view(request):
     return render(request, 'detail.html', {})
 
 
+@cache_page(10)
 def author_view(request):
     author_list = Author.objects.prefetch_related('book_set').all()
     book_count = author_list.annotate(num_books=Count('book'))
@@ -36,6 +39,7 @@ def publisher_detail_view(request, pk):
     return render(request, 'author_detail.html', {'p': p})
 
 
+@cache_page(10)
 def book_view(request):
     b_list = Book.objects.all()
     return render(request, 'book_list.html', {'b_list': b_list})
@@ -105,3 +109,10 @@ class AuthorDeleteView(LoginRequiredMixin, DeleteView):
     template_name = 'new_app/author_delete.html'
     success_url = reverse_lazy('new_app:authors')
     login_url = '/admin/login/?next=/admin/'
+
+
+@method_decorator(cache_page(10), 'dispatch')
+class AuthorCacheListView(ListView):
+    model = Author
+    queryset = Author.objects.annotate(count=Count('book'))
+    paginate_by = 1000
