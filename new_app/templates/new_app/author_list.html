@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+table {
+  border:1px solid black;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <title>Authors list</title>
 </head>
+
 <body>
 
 {% block content %}
   <h1>Authors List</h1>
 <strong><a href='{% url "new_app:author_create" %}'>Create new Author</a></strong><br><br>
-      {% for a in author_list %}
-        <li>
-          <a href='{% url "new_app:author_cbv" pk=a.id %}'>{{ a.name }}</a>
-        </li>
-      {% endfor %}
-
+<table>
+    <thead>
+      <th bgcolor = "#A6AFD0">Author name</th>
+      <th bgcolor = "#A6AFD0">Numbers of books</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        {% for a in author_list %}
+        <td><a href='{% url "new_app:author_cbv" pk=a.id %}'>{{ a.name }}</a></td>
+        <td>{{ a.count }}</td>
+    </tr>
+        {% endfor %}
+    </tbody>
+</table>
 <div class="pagination">
     <span class="step-links">
         {% if page_obj.has_previous %}
